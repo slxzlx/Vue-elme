@@ -1,0 +1,39 @@
+body,ul,li,div,img,a,p,form,input,h1,h2,h3{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none
+}
+input{
+    outline: none;
+    border: none;
+    border: 1px solid #ccc
+}
+
+.f_left{
+    float: left;
+}
+
+.f_rihgt{
+    float: right;
+}
+.caise{
+    background: -webkit-linear-gradient(left,#FE8537,#F02B2B);
+    background: linear-gradient(90deg, #FE8537,#F02B2B);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: .8rem;
+    line-height: 1.125rem;
+    /* color: #222; */
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
