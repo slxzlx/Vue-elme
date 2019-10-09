@@ -27,7 +27,7 @@
         <div class="content">
           <div class="title">
             <span class="name">购物车</span>
-            <span class="clear" >清空</span>
+            <span class="clear" @click = 'clear' >清空</span>
           </div>
           <div class="iscroll">
             <ul class="shoplist">
@@ -146,8 +146,6 @@ export default {
       let rect = this.dropballs[count - 1].startel.getBoundingClientRect();
       let startX = rect.left - 31;
       let startY = -(window.innerHeight-rect.top- 45);
-      console.log(rect.bottom)
-      console.log(startX,startY)
       el.style.transform = `translate(${startX}px,${startY}px)`;
     },
     enter(el, done) {
@@ -161,6 +159,9 @@ export default {
       if (ball) {
         ball.show = false;
       }
+    },
+    clear(){
+      this.
     }
   },
   components: {
